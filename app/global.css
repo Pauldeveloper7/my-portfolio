@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @layer base {
+    body {
+      @apply font-inter;
+      color:white;
+    }
+  } */
+@layer utilities{
+    .heading {
+      font-size: 3.75rem; /* 60px */
+      line-height: 1; 
+      }
+}
