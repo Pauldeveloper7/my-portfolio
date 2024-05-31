@@ -5,7 +5,7 @@ import { AnimatedTooltip } from "./ui/animated-toolkit";
 import people from '@/utils/people'
 const BentoGrid = () => {
   return (
-    <section className="flex flex-row  w-full  px-10 gap-9 justify-center items-center">
+    <section className="flex flex-row  w-full  px-10 gap-9 justify-center items-center max-md:flex-row">
     <div className=" flex flex-col  gap-12">
       <div className="">
     <BackgroundGradientAnimation>
