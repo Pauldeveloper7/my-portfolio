@@ -1,7 +1,7 @@
 import  {HeroParallax}  from "@/components/ui/Hero"
 import { products } from "@/utils/products";
-import { cn } from "@/utils/cn";
 import Navbar from "@/components/Navbar";
+import BentoGrid from "@/components/bentogrid";
 import {
   TextRevealCard,
   TextRevealCardDescription,
@@ -15,26 +15,29 @@ const page = () => {
         <div>
             <HeroParallax products={products}/>
         </div>
-        <div className="m-auto relative  top-[60%]">
+        <div className="m-auto relative  top-[60%] ">
         <h1 className="text-2xl md:text-5xl font-bold dark:text-white p-20 text-center ">
         My Ideology <br /> 
       </h1>
+      {/* bg-[#0E0E10] */}
       <div className="flex items-center justify-center
-       bg-[#0E0E10]
-       h-[40rem] rounded-2xl w-90">
+       bg-custom-image bg-cover bg-center 
+       h-[35rem] rounded-2xl w-full max-md:w-90 m-auto p-5">
       <TextRevealCard
-        text="You know the business"
-        revealText="I know the chemistry "
+        text="Full stack web developer "
+        revealText="  My approach blends technical expertise with creative vision, ensuring each project resonates with its audience and achieves its goals. "
       >
         <TextRevealCardTitle>
-          Sometimes, you just need to see it.
-        </TextRevealCardTitle>
+        I'm Komal Paul, a React developer passionate about transforming innovative ideas into dynamic web experiences.
+                </TextRevealCardTitle>
         <TextRevealCardDescription>
-          This is a text reveal card. Hover over the card to reveal the hidden
-          text.
+        Every line of code is a brushstroke on the canvas of the web text.
         </TextRevealCardDescription>
       </TextRevealCard>
     </div>
+           </div>
+           <div className=" mt-11 relative top-16">
+             <BentoGrid/>
            </div>
     </main>
   )

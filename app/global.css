@@ -8,6 +8,7 @@
       color:white;
     }
   } */
+
 @layer utilities{
     .heading {
       font-size: 3.75rem; /* 60px */
