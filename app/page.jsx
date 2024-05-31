@@ -1,7 +1,7 @@
 import  {HeroParallax}  from "@/components/ui/Hero"
 import { products } from "@/utils/products";
 import Navbar from "@/components/Navbar";
-import BentoGrid from "@/components/bentogrid";
+import BentoGrid from "@/components/BentoGrid";
 import {
   TextRevealCard,
   TextRevealCardDescription,
