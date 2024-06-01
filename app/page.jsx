@@ -1,7 +1,7 @@
 import  {HeroParallax}  from "@/components/ui/Hero"
 import { products } from "@/utils/products";
 import Navbar from "@/components/Navbar";
-import Reviews from "@/components/reviews";
+import Reviews from "@/components/Reviews";
 import Footer from "@/components/Footer";
 import BentoGrid from "@/components/BentoGrid";
 import {
