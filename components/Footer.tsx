@@ -15,13 +15,13 @@ const Footer = () => {
       Elevate your digital presence to new heights?
       </h1>
       <div className=' flex gap-6 justify-center items-center'>
-      <a href="mailto:komalpaul403@outlook.com">
+      <a href="mailto:komalpaul403@gmail.com">
           <ButtonsCard
             title="Let's get in touch"
             icon={<MailIcon/>}
           />
         </a>
-         <ButtonsCard title='Share '
+         <ButtonsCard title=' '
          icon={<ShareIcon/>}
          />
       </div>

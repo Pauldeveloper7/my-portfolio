@@ -21,14 +21,14 @@ const page = () => {
         <div>
             <HeroParallax products={products}/>
         </div>
-        <div className="m-auto relative  top-[60%] ">
+        <div className="m-auto relative  top-[60%]  ">
         <h1 className="text-2xl md:text-5xl font-bold dark:text-white p-20 text-center ">
         My Ideology <br /> 
       </h1>
       {/* bg-[#0E0E10] */}
       <div className="flex items-center justify-center
        bg-custom-image bg-cover bg-center 
-       h-[35rem] rounded-2xl w-full max-md:w-90 m-auto p-5">
+       h-[35rem] rounded-2xl w-full max-md:w-90 m-auto p-5 ">
       <TextRevealCard
         text="Full stack web developer "
         revealText="  My approach blends technical expertise with creative vision, ensuring each project resonates with its audience and achieves its goals. "
