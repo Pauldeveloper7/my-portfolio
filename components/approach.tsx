@@ -9,14 +9,14 @@ export function CanvasRevealEffectDemo() {
     <h1 className=" text-center text-5xl font-extrabold"> My Approach</h1>
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-black dark:bg-black w-full gap-4 mx-auto px-8">
         <Card  title="Planning & Strategy"
-          icon={<AceternityIcon order="Phase 1"  />}>
+          icon={<AceternityIcon order=" Step 1"  />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
         <Card   title="Development & Progress Update"
-          icon={<AceternityIcon order="Phase 2" />}>
+          icon={<AceternityIcon order="Step 2" />}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-white"
@@ -30,7 +30,7 @@ export function CanvasRevealEffectDemo() {
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
         <Card   title="Development & Launch"
-          icon={<AceternityIcon order="Phase 3" />}
+          icon={<AceternityIcon order="Step 3" />}
           des="This is where the magic happens! Based on the approved design, 
           I'll translate everything into functional code, building your website
           from the ground up.">
