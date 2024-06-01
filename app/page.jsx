@@ -1,12 +1,18 @@
 import  {HeroParallax}  from "@/components/ui/Hero"
 import { products } from "@/utils/products";
 import Navbar from "@/components/Navbar";
+import Reviews from "@/components/reviews";
+import Footer from "@/components/Footer";
 import BentoGrid from "@/components/BentoGrid";
 import {
   TextRevealCard,
   TextRevealCardDescription,
   TextRevealCardTitle,
 } from "@/components/ui/text-reveal-card";
+import { PinContainer } from "@/components/ui/3d-pin";
+import Image from "next/image";
+import RecentProjects from "@/components/Recentprojects";
+import { CanvasRevealEffectDemo } from "@/components/approach";
 const page = () => {
 
   return (
@@ -39,6 +45,19 @@ const page = () => {
            <div className=" mt-11 relative top-16">
              <BentoGrid/>
            </div>
+           <div className=" mt-11">
+
+           <RecentProjects/>
+           </div>
+           <div className=" mt-11">
+   <CanvasRevealEffectDemo/>
+</div>
+<div className=" mt-11">
+   <Reviews/>
+</div>
+<div className=" mt-11">
+   <Footer/>
+</div>
     </main>
   )
 }
