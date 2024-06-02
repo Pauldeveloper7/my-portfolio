@@ -1,4 +1,4 @@
-import  {HeroParallax}  from "@/components/ui/Hero"
+'use client'
 import { products } from "@/utils/products";
 import Navbar from "@/components/Navbar";
 import Reviews from "@/components/Reviews";
@@ -13,8 +13,9 @@ import RecentProjects from "@/components/Recentprojects";
 import { cn } from "@/utils/cn";
 import { CanvasRevealEffectDemo } from "@/components/approach";
 import { Boxes } from "@/components/ui/bg";
+import { useRouter } from "next/navigation";
 const page = () => {
-
+  const router = useRouter();
   return (
     <main className="relative w-full bg-black text-white h-full overflow-hidden ">
       <Navbar/>
@@ -35,7 +36,8 @@ const page = () => {
         />
         <span
           className="inline-flex h-full w-full cursor-pointer  
-        justify-center rounded-full bg-black px-5 py-2 text-purple backdrop-blur-3xl font-bold text-2xl"
+        justify-center rounded-full bg-black px-5 py-2 text-purple backdrop-blur-3xl font-bold text-2xl "
+        onClick={router.push('#contactme')}
         >
           Contact Me
         </span>

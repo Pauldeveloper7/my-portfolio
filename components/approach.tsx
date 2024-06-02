@@ -53,8 +53,8 @@ export function CanvasRevealEffectDemo() {
           ">
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-sky-600"
-            colors={[[125, 211, 252]]}
+            containerClassName="bg-red-600"
+            colors={[[325, 251, 252]]}
           />
         </Card>
       </div>

@@ -15,7 +15,12 @@ const BentoGrid = () => {
       Email copied 
     </button>
      ):(
-     <button className=" font-extrabold p-5 rounded-md text-black mt-10 bg-blue-800" onClick={()=>{setIscopied(true)}}>Copy my email </button>
+     <button className=" font-extrabold p-5 rounded-md text-black mt-10 bg-blue-800" onClick={()=>{
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText('komalpaulbwebdeveloper@gmail.com');
+            console.log('copied to clipboard successfully')
+          }
+      setIscopied(true)}}>Copy my email </button>
      )}
     
       </div>
