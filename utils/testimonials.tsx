@@ -1,33 +1,39 @@
 
 const  testimonials = [
     {
-      quote:
-        "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-      name: "Charles Dickens",
-      title: "A Tale of Two Cities",
+      desc:
+        "As a non-technical person, I appreciated Komal's patience and expertise. They created a beautiful, responsive blog and provided excellent SEO optimization. Couldn't be happier!",
+      name: "Emily T., Blogger",
+      img: "/images/avatar1.jpg"
     },
     {
-      quote:
-        "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-      name: "William Shakespeare",
-      title: "Hamlet",
+      desc:
+        "Komal paul developed a custom business application that significantly improved our operations. Professional, knowledgeable, and responsive, they delivered a functional and secure product that exceeded our expectations.",
+        name: "John D., Operations Manager at XYZ Corp",
+      img: "/images/avatar2.jpg"
     },
     {
-      quote: "All that we see or seem is but a dream within a dream.",
-      name: "Edgar Allan Poe",
-      title: "A Dream Within a Dream",
+      desc: "She developed a visually appealing and highly functional corporate website with custom features. Excellent communication and adherence to deadlines made the process smooth. Top-notch developer!",
+      name: "Michael B., CEO of Tech Innovators Inc.",
+      img: "/images/avatar3.jpg",
     },
     {
-      quote:
-        "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-      name: "Jane Austen",
-      title: "Pride and Prejudice",
+      desc:
+        "Komal delivered a robust educational platform that is user-friendly for both students and instructors. Their post-launch support and expertise have been invaluable. Thrilled with the result!",
+        name: "Laura K., Director at EduLearn",
+      img: "/images/avatar4.jpg",
     },
     {
-      quote:
-        "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-      name: "Herman Melville",
-      title: "Moby-Dick",
+      desc:
+        "Komal developed a scalable backend for our fitness app, ensuring seamless integration with the front end. Their problem-solving skills and proactive approach were critical to our success. Highly recommend!",
+        name: "David R., CTO of FitnessApp",
+      img: "/images/avatar5.jpeg",
+    },
+    {
+      desc:
+        "Komal transformed my e-commerce website, integrating a custom shopping cart and payment gateways seamlessly. Their skill and attention to detail were exceptional. Highly recommended!",
+        name: "Sarah M., Owner of Sarah’s Boutique",
+      img: "/images/avatar6.jpeg",
     },
   ];
   export default testimonials ;

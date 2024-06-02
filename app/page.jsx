@@ -9,23 +9,43 @@ import {
   TextRevealCardDescription,
   TextRevealCardTitle,
 } from "@/components/ui/text-reveal-card";
-import { PinContainer } from "@/components/ui/3d-pin";
-import Image from "next/image";
 import RecentProjects from "@/components/Recentprojects";
+import { cn } from "@/utils/cn";
 import { CanvasRevealEffectDemo } from "@/components/approach";
+import { Boxes } from "@/components/ui/bg";
 const page = () => {
 
   return (
-    <main className="relative w-full bg-black text-white h-full overflow-hidden">
+    <main className="relative w-full bg-black text-white h-full overflow-hidden ">
       <Navbar/>
-        <div>
-            <HeroParallax products={products}/>
-        </div>
+       <div className="h-screen relative w-full overflow-hidden bg-black flex flex-col  items-start justify-center gap-6">
+      <div className="absolute inset-0 w-full h-full bg-black z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none 
+      flex " />
+      <Boxes />
+      <h1 className={cn("md:text-7xl text-4xl text-white relative z-20 font-extrabold mx-20   max-md:mx-10")}>
+      Crafting with passion seamless, innovative, and scalable web solutions  <br /> 
+      </h1>
+      <p className="  text-neutral-300 relative z-20 mx-20   max-md:mx-10">
+      Hey , I am komal paul , I bring ideas to life through responsive, user-friendly applications. From concept to deployment, I ensure that every detail is meticulously crafted to deliver an exceptional digital experience.      </p>
+      <button className="relative flex overflow-hidden rounded-full p-[1px] justify-start items-start mx-20 max-md:mx-10 ">
+        <span
+          className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]
+          bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]
+         "
+        />
+        <span
+          className="inline-flex h-full w-full cursor-pointer  
+        justify-center rounded-full bg-black px-5 py-2 text-purple backdrop-blur-3xl font-bold text-2xl"
+        >
+          Contact Me
+        </span>
+      </button>
+    </div>
+      
         <div className="m-auto relative  top-[60%]" id="aboutme">
         <h1 className="text-2xl md:text-5xl font-bold dark:text-white p-20 text-center ">
         My Ideology <br /> 
       </h1>
-      {/* bg-[#0E0E10] */}
       <div className="flex items-center justify-center
        bg-custom-image bg-cover bg-center 
        h-[35rem] rounded-2xl w-full max-md:w-90 m-auto p-5 ">

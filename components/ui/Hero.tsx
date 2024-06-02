@@ -60,50 +60,18 @@ export const HeroParallax = ({
       className="py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
-      {/* <motion.div
-        style={{
-          rotateX,
-          rotateZ,
-          translateY,
-          opacity,
-        }}
-        className=""
-      > */}
-        {/* <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
-          {firstRow.map((product) => (
-            <ProductCard
-              product={product}
-              translate={translateX}
-              key={product.title}
-            />
-          ))}
-        </motion.div> */}
-        {/* <motion.div className="flex flex-row  mb-20 space-x-20 ">
-          {secondRow.map((product) => (
-            <ProductCard
-              product={product}
-              translate={translateXReverse}
-              key={product.title}
-            />
-          ))}
-        </motion.div> */}
-        {/* <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
-          {thirdRow.map((product) => (
-            <ProductCard
-              product={product}
-              translate={translateX}
-              key={product.title}
-            />
-          ))}
-        </motion.div>
-      </motion.div> */}
+    
     </div>
   );
 };
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
+    <motion.div
+    initial={{ x: "100vw" }} // Initially positioned outside the viewport on the right
+        animate={{ x: 0 }} // Moves to the center of the viewport
+        transition={{ duration: 0.9, type: "spring", stiffness: 40 }}
+     className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
        Crafting with passion seamless, innovative, and scalable web solutions  <br /> 
       </h1>
@@ -128,7 +96,7 @@ export const Header = () => {
       </button>
     </div> 
     </div>
-        </div>
+        </motion.div>
   );
 };
 

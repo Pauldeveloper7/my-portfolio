@@ -1,5 +1,7 @@
 "use client";
 import { cn } from "@/utils/cn";
+import { Star } from "@mui/icons-material";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
@@ -10,9 +12,9 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    quote: string;
+    desc: string;
+    img: string;
     name: string;
-    title: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -98,16 +100,26 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className="relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-                {item.quote}
+              <span className="relative z-20 text-sm leading-[1.6]
+               text-gray-100
+               font-normal">
+                {item.desc}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <span className=" text-sm leading-[1.6] text-black font-normal">
-                    {item.name}
+                <span className="flex flex-row gap-3 items-center">
+                  <Image src={item.img} alt="client's image" className="rounded-full " width={70} height={70} />
+                  <span className=" text-sm leading-[1.6] text-black flex flex-col font-bold ">
+                  <h1>  {item.name}</h1> 
+                  <div>
+                    <Star className=" text-yellow-500"/>
+                    <Star className=" text-yellow-500"/>
+                    <Star className=" text-yellow-500"/>
+                    <Star className=" text-yellow-500"/>
+                    <Star className=" text-yellow-500"/>
+                  </div>
                   </span>
                   <span className=" text-sm leading-[1.6] text-black font-normal">
-                    {item.title}
+                    
                   </span>
                 </span>
               </div>

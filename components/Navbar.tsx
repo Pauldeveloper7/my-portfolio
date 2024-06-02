@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
         {/* large devices  */}
         <div className=' max-md:hidden'>
-           <nav className='flex gap-10 text-lg	list-none'>
+           <nav className='flex gap-10 text-lg	list-none '>
             <Link href={'https://localhost:3000'}><li>Home</li></Link>     
             <Link href={'#aboutme'}><li>About me </li></Link>          
             <Link href={'#projects'}><li>Projects</li></Link>         

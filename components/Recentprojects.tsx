@@ -5,7 +5,7 @@ import { PinContainer } from  './ui/3d-pin'
 const RecentProjects = () => {
   return (
     <div className="py-20 " id="projects">
-         <h1 className=" text-center text-5xl font-extrabold">Small section of my recent projects</h1>
+         <h1 className=" text-center text-5xl font-extrabold"> Recent projects</h1>
 
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
