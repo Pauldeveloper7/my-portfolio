@@ -21,7 +21,7 @@ const page = () => {
         <div>
             <HeroParallax products={products}/>
         </div>
-        <div className="m-auto relative  top-[60%]  ">
+        <div className="m-auto relative  top-[60%]" id="aboutme">
         <h1 className="text-2xl md:text-5xl font-bold dark:text-white p-20 text-center ">
         My Ideology <br /> 
       </h1>

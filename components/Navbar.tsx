@@ -4,8 +4,11 @@ import React from 'react'
 import { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 const Navbar = () => {
     const [isOpen, setOpen] = useState(false)
+    const router = useRouter();
   return (
     <div>
 
@@ -27,11 +30,12 @@ const Navbar = () => {
         {/* large devices  */}
         <div className=' max-md:hidden'>
            <nav className='flex gap-10 text-lg	list-none'>
-            <li>Home</li>
-            <li>About me </li>
-            <li>Projects</li>
-            <li>Contact me </li>
-            <li>Testimonials</li>
+            <Link href={'https://localhost:3000'}><li>Home</li></Link>     
+            <Link href={'#aboutme'}><li>About me </li></Link>          
+            <Link href={'#projects'}><li>Projects</li></Link>         
+            <Link href={'#contactme'}><li>Contact me </li></Link>            
+            <Link href={'#testimonials'}><li>Testimonials</li></Link>
+            <li onClick={()=>{router.push('https://docs.google.com/document/d/13niJX4kI6u9WQ9QpnJaIWGMQRoyHbEm8/edit?usp=sharing&ouid=114766926513495289523&rtpof=true&sd=true')}}>Resume</li>
            </nav>
         </div>
     </div>
@@ -40,11 +44,13 @@ const Navbar = () => {
       isOpen && (
           <nav className=' flex justify-center  w-full h-full items-center  bg-black  p-10 fixed z-50 '>
           <ol className='flex gap-9 flex-col h-full'>
-          <li>Home</li>
-          <li>About me </li>
-          <li>Projects</li>
-          <li>Contact me </li>
-          <li>Testimonials</li>
+          <Link href={'https://localhost:3000'}><li>Home</li></Link>     
+            <Link href={'#aboutme'}><li>About me </li></Link>          
+            <Link href={'#projects'}><li>Projects</li></Link>         
+            <Link href={'#contactme'}><li>Contact me </li></Link>            
+            <Link href={'#testimonials'}><li>Testimonials</li></Link>
+            <li onClick={()=>{router.push('https://docs.google.com/document/d/13niJX4kI6u9WQ9QpnJaIWGMQRoyHbEm8/edit?usp=sharing&ouid=114766926513495289523&rtpof=true&sd=true')}}>Resume</li>
+
           </ol>
           </nav>
     )

@@ -8,14 +8,21 @@ export function CanvasRevealEffectDemo() {
     <>
     <h1 className=" text-center text-5xl font-extrabold"> My Strategy</h1>
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-black dark:bg-black w-full gap-4 mx-auto px-8">
-        <Card  title="Planning & Strategy"
-          icon={<AceternityIcon order=" Step 1"  />}>
+        <Card  title="Initial Step and Design"
+         des="Requirement Gathering ,
+         Technical Feasibility , Prototyping"
+          icon={<AceternityIcon order=" Step 1"
+            />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card   title="Development & Progress Update"
+        <Card   title="Development"
+        des="Set Up Development Environment,
+        Frontend Development,
+        Backend Development , Database Integration"
+        
           icon={<AceternityIcon order="Step 2" />}>
           <CanvasRevealEffect
             animationSpeed={3}
@@ -29,11 +36,10 @@ export function CanvasRevealEffectDemo() {
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
-        <Card   title="Development & Launch"
+        <Card   title=" Testing and Deployment"
           icon={<AceternityIcon order="Step 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up.">
+          des="Testing,Continuous Integration/Continuous Deployment (CI/CD),Deployment,Choose a cloud service provider
+          ">
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
@@ -41,7 +47,16 @@ export function CanvasRevealEffectDemo() {
           />
         </Card>
 
-        
+        <Card   title=" Maintenance and Optimization"
+          icon={<AceternityIcon order="Step 4" />}
+          des="Monitoring ,Performance Optimization, Security considerations , Feedback Loop.
+          ">
+          <CanvasRevealEffect
+            animationSpeed={3}
+            containerClassName="bg-sky-600"
+            colors={[[125, 211, 252]]}
+          />
+        </Card>
       </div>
     </>
   );
@@ -63,7 +78,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-white/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem] "
+      className="border border-white/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[27rem] "
     >
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-white" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-white" />

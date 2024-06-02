@@ -112,12 +112,6 @@ export const Header = () => {
       </p>
       <div className=" mt-11">
 
-      {/* <Button
-        borderRadius="1.75rem"
-        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 "
-        >
-        Contact me
-      </Button> */}
       <div>
       <button className="relative inline-flex overflow-hidden rounded-full p-[1px] ">
         <span
